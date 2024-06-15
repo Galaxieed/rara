@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  background-color: var(--white-bg);
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.footer > h4 {
+  color: #000000;
+}
+
+.footer > div {
+  display: flex;
+  gap: 20px;
+}
+
+.icons {
+  filter: invert();
+}

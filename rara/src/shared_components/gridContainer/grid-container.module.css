@@ -1,0 +1,58 @@
+.grid {
+  column-width: 250px;
+  column-gap: 10px;
+  padding: 10px;
+}
+
+.masonryItem {
+  width: 100%;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.gridItem {
+  aspect-ratio: 1;
+  width: 100%;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+
+}
+
+.actionHover {
+  position: relative;
+}
+
+.actionHover:hover img {
+  transform: scale(1.3);
+}
+
+.actionHover:hover .actionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.actionHover:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 0.3s;
+}

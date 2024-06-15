@@ -1,0 +1,29 @@
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: fit-content;
+
+  margin-bottom: 5vh;
+  margin-right: 10vw;
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  background-image: url('../../assets/webarebears.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  bottom: 0;
+  right: -90px;
+  aspect-ratio: 1;
+  height: 300px;
+  z-index: -1;
+}

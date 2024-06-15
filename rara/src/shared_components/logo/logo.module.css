@@ -1,0 +1,41 @@
+.container > p {
+  font-weight: bolder;
+  font-size: 128px;
+  letter-spacing: 10px;
+  line-height: 128px;
+  height: fit-content;
+  width: fit-content;
+  
+  background: linear-gradient(45deg, #5E9BAE, #274048);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 35px;
+}
+
+.container > p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 17px;
+  height: 94px;
+  width: fit-content;
+  border-left: 15px solid;
+  border-image-slice: 1;
+  border-width: 15px;
+  border-image-source: linear-gradient(45deg, #CB3E3E, #F11212);
+}
+
+.container > p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  border-bottom: 40px solid #336FC9;
+}

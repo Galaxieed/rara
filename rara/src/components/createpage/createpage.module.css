@@ -1,0 +1,38 @@
+.container {
+  padding: 5vw;
+  position: relative;
+}
+
+.container input[type="text"], .container textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: black;
+  resize: vertical;
+}
+
+.container input[type="file"] {
+  width: 100%;
+  border: 1px dashed white;
+  background-color: transparent;
+  cursor: pointer;
+  height: 320px;
+  position: relative;
+}
+
+.container input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+.container input[type="file"]::after {
+  content: "+";
+  font-weight: 200;
+  font-size: xx-large;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+}
