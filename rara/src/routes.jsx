@@ -25,6 +25,12 @@ const router = createBrowserRouter([
       }, {
         path: "/view",
         element: <ViewPage />,
+        children: [
+          {
+            path: "/view/:id",
+            element: <ViewPage />,
+          }
+        ]
       }, {
         path: "/trash",
         element: <TrashPage />,
